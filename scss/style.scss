@@ -1,12 +1,9 @@
 /*
-Template Name: Bootstrap-Cheatsheet
-Author: wrappixel
-Email: niravjoshi87@gmail.com
+Template Name: Neumorphism Ui
+Author: Deep Javiya
+Email: patelaleis@gmail.com
 File: scss
 */
-
-@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@100;200;300;400;500;600;700;800;900&display=swap');
-
 
 @import "variable";
 @import "../assets/libs/bootstrap/scss/bootstrap.scss";
@@ -17,7 +14,6 @@ File: scss
 //  Components
 @import "components/header";
 @import "components/global";
-@import "components/breadcrumb";
 @import "components/footer";
 @import "components/common";
 

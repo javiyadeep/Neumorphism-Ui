@@ -34,20 +34,6 @@ ul {
   padding: 50px 0;
 }
 
-.card {
-  margin-bottom: 24px;
-  box-shadow: 0 2px 16px -4px rgba(0, 0, 0, 0.22);
-  overflow: hidden;
-
-  .card-body {
-    padding: 6px 0;
-  }
-}
-
-.hover-effect {
-  transition: all 0.4s ease-in-out;
-}
-
 .align-items-stretch {
   align-items: stretch;
 }
@@ -92,23 +78,82 @@ ul {
 
 
 // Custom Btn Start
-.btn-primary {
-  color: $white;
-
-  &:hover {
-    color: $white;
-  }
-}
-
-.btn-outline-primary,
-.btn-outline-info {
-  &:hover {
-    color: $white;
-  }
-}
-
 // Custom Btn End
 
 
-// Custom Text hover Start
-// Custom Text hover End
+// Custom Text Start
+.text-raleway {
+  font-family: $font-family-raleway;
+}
+
+// Custom Text End
+
+
+// Custom Shadow Start
+.shadow-in {
+  box-shadow: $shadow-in;
+  border: 1px solid #d1d9e6;
+  border-radius: 6px;
+}
+
+
+.shadow-out {
+  box-shadow: $shadow-out;
+  border: 1px solid #d1d9e6;
+  border-radius: 6px;
+}
+
+.shadow-in-hover {
+  box-shadow: $shadow-in;
+  border: 1px solid #d1d9e6;
+  border-radius: 6px;
+  transition: all 0.4s ease-in-out;
+}
+
+.shadow-in-hover:hover {
+  box-shadow: $shadow-out;
+  border: 1px solid #d1d9e6;
+  border-radius: 6px;
+}
+
+.shadow-in-hover:focus {
+  box-shadow: $shadow-out;
+  border: 1px solid #d1d9e6;
+  border-radius: 6px;
+}
+
+.shadow-in-hover:active {
+  box-shadow: $shadow-out;
+  border: 1px solid #d1d9e6;
+  border-radius: 6px;
+}
+
+
+
+.shadow-out-hover {
+  box-shadow: $shadow-out;
+  border: 1px solid #d1d9e6;
+  border-radius: 6px;
+  transition: all 0.4s ease-in-out;
+}
+
+.shadow-out-hover:hover {
+  box-shadow: $shadow-in;
+  border: 1px solid #d1d9e6;
+  border-radius: 6px;
+}
+
+.shadow-out-hover:focus {
+  box-shadow: $shadow-in;
+  border: 1px solid #d1d9e6;
+  border-radius: 6px;
+}
+
+.shadow-out-hover:active {
+  box-shadow: $shadow-in;
+  border: 1px solid #d1d9e6;
+  border-radius: 6px;
+}
+
+
+// Custom Shadow End
