@@ -1,0 +1,25 @@
+/*
+Template Name: Bootstrap-Cheatsheet
+Author: wrappixel
+Email: niravjoshi87@gmail.com
+File: scss
+*/
+
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@100;200;300;400;500;600;700;800;900&display=swap');
+
+
+@import "variable";
+@import "../assets/libs/bootstrap/scss/bootstrap.scss";
+@import "../../scss/icons/font-awesome/css/fontawesome-all.css";
+@import "../../scss/icons/themify-icons/themify-icons.css";
+@import "../../scss/icons/simple-line-icons/css/simple-line-icons.css";
+
+//  Components
+@import "components/header";
+@import "components/global";
+@import "components/breadcrumb";
+@import "components/footer";
+@import "components/common";
+
+//  Pages 
+@import "pages/home";

@@ -1,0 +1,146 @@
+/*
+Template Name: Bootstrap-Cheatsheet
+Author: wrappixel
+Email: niravjoshi87@gmail.com
+File: scss
+*/
+
+// Variables - here you can change this global values of the UI Kit
+$font-family-sans-serif: 'Montserrat',
+sans-serif !default;
+
+
+/*Theme Colors*/
+// $headingtext: #3e4555;
+// $bodytext: #8d97ad;
+// $themecolor: #f869f9;
+// $themecolor-alt: #2F3437;
+// $themecolor-dark: #403e72;
+// $themecolor-dark-alt: #464479;
+
+/*bootstrap Color*/
+$primary: #7367f0;
+$info: #39c2fa;
+$dark: #423e51;
+$secondary: #f8f9fa;
+$muted: #7b7885;
+$success: #42b983;
+$danger: #d63384;
+
+/*Light colors*/
+$light-info: #34d9da;
+
+// Gray color
+$white: #fff !default;
+$gray-100: #f5f4f4 !default;
+$gray-200: #fcfcfc !default;
+$gray-300: #eeeeee !default;
+$gray-400: #d5d5d5 !default;
+$gray-500: #e1e1e1 !default;
+$gray-600: #e9ecef !default;
+$gray-700: #b9b9c3 !default;
+$gray-800: #6c757d !default;
+$gray-900: #212529 !default;
+$black: #000 !default;
+// scss-docs-end gray-color-variables
+
+// fusv-disable
+// scss-docs-start gray-colors-map
+$grays: ("100": $gray-100,
+  "200": $gray-200,
+  "300": $gray-300,
+  "400": $gray-400,
+  "500": $gray-500,
+  "600": $gray-600,
+  "700": $gray-700,
+  "800": $gray-800,
+  "900": $gray-900) !default;
+
+
+/*Normal Color*/
+$light: $gray-600;
+$white: #ffffff;
+$red: #fb3a3a;
+$yellow: #fed700;
+$purple: #05998B;
+$blue: #02bec9;
+$megna: #1dc8cd;
+$orange:#ff6a5b;
+/*Extra Variable*/
+
+// Body Custom settings
+$text-muted: $muted !default;
+
+
+/*font-sizes*/
+$font-sizes: (1: 10px,
+  2: 13px,
+  3: 14px,
+  4: 16px,
+  5: 18px,
+  6: 20px,
+  7: 24px,
+  8: 30px,
+  9: 36px,
+  10: 40px,
+) !default;
+
+$font-size-root: null !default;
+$font-size-base: 1rem !default; // Assumes the browser default, typically `15px`
+$font-size-sm: 0.813rem !default;
+$font-size-lg: 1.125rem !default;
+
+// Font-Weight
+$font-weight-lighter: 300 !default;
+$font-weight-light: 400 !default;
+$font-weight-normal: 500 !default;
+$font-weight-bold: 600 !default;
+$font-weight-bolder: 700 !default;
+
+$font-weight-base: $font-weight-light !default;
+
+// Grid
+$grid-gutter-width: 24px !default;
+
+// Container Custom settings
+$container-max-widths: (sm: 540px,
+  md: 720px,
+  lg: 960px,
+  xl: 1140px,
+  xxl: 1320px,
+) !default;
+$container-padding-x: 15px !default;
+
+
+// Body
+$body-color: $dark !default;
+
+// Input
+$input-border-width: 0px !default;
+$input-border-radius: 0px !default;
+
+// Card
+$card-spacer-y: 25px !default;
+$card-spacer-x: 30px !default;
+$card-border-radius: 5px !default;
+$card-border-width: 0 !default;
+// $card-box-shadow: 0 2px 16px -4px rgba(0, 0, 0, 0.22);
+
+// Card
+
+// Input
+$input-bg: transparent;
+$input-padding-x: 0;
+$input-font-size: 16px !default;
+$input-placeholder-color: $gray-700 !default;
+
+// Forms
+$form-label-font-weight: 500 !default;
+$form-label-color: $success !default;
+$form-label-font-size: 13px !default;
+
+// Negative margin
+$enable-negative-margins: true !default;
+
+// Heading
+$headings-font-weight: 600 !default;

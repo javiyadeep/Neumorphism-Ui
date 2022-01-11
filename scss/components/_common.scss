@@ -1,0 +1,27 @@
+.to-top {
+    background: $primary;
+    position: fixed;
+    bottom: 110%;
+    right: 20px;
+    width: 42px;
+    height: 38px;
+    border-radius: 4px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 14px;
+    color: $white;
+    opacity: 0;
+    pointer-events: none;
+    transition: all 1s ease-in-out;
+
+    &:hover {
+        color: $white;
+    }
+}
+
+.to-top.active {
+    bottom: 20px;
+    pointer-events: auto;
+    opacity: 1;
+}

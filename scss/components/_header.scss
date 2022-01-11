@@ -1,0 +1,13 @@
+.navbar {
+    padding: 6px 0;
+
+    .nav-link {
+        font-weight: $font-weight-light;
+        letter-spacing: 0.17px;
+        color: $white !important;
+    }
+    
+    .active {
+        font-weight: $font-weight-bold;
+    }
+}

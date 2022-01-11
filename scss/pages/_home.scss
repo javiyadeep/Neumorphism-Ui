@@ -1,0 +1,121 @@
+#myBtn {
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+}
+
+.pose-img {
+    max-height: 300px;
+}
+
+.heading-title {
+    font-weight: 600;
+    color: $dark;
+    font-size: 32px;
+}
+
+.subtitle {
+    color: $muted;
+    font-weight: $font-weight-normal;
+}
+
+.github-btn {
+    padding: 3px 10px;
+    border-radius: 4px;
+    background-color: $gray-300;
+    background-image: linear-gradient(to bottom, $gray-200 0, $gray-300 100%);
+    border: 1px solid $gray-400;
+    transition: all 0.4s ease-in-out;
+
+    &:hover {
+        background-image: linear-gradient(to bottom, $gray-300 0, $gray-500 100%);
+        background-color: $gray-500;
+    }
+}
+
+.github-view {
+    padding: 3px 10px;
+    border-radius: 4px;
+    background-color: $secondary;
+    border: 1px solid $gray-400;
+    transition: all 0.4s ease-in-out;
+    position: relative;
+
+    &::before {
+        position: absolute;
+        content: "<";
+        top: 50%;
+        transform: translateY(-50%);
+        left: -7px;
+        background-color: $secondary;
+        color: $gray-400;
+        line-height: 5px;
+        font-size: 14px;
+    }
+
+    &:hover {
+        color: $primary;
+    }
+}
+
+.newly-subtitle {
+    color: $gray-900;
+}
+
+.search-icon {
+    color: $gray-700;
+}
+
+.input-group {
+    max-width: 350px;
+    box-shadow: 0 1.2px 3.5px 0 rgba(0, 0, 0, 0.06);
+
+    @include media-breakpoint-down(lg) {
+        max-width: 100% !important;
+
+    }
+}
+
+#collapse {
+    border-radius: 0 4px 4px 0;
+}
+
+#expand {
+    border-radius: 4px 0px 0px 4px;
+}
+
+.card-heading {
+    padding: 14px 20px;
+    background-color: $gray-800;
+    color: $white;
+    text-transform: uppercase;
+}
+
+.class-link {
+    padding: 4px 18px;
+    color: $muted;
+
+    &:hover {
+        .class-detail {
+            visibility: visible;
+        }
+
+        background-color: rgba($color: $primary, $alpha: 0.08);
+        color: $primary;
+
+    }
+
+    .class-detail {
+        visibility: hidden;
+        opacity: 0.7;
+    }
+}
+
+.highlight-class {
+    transition: all 0.4s ease-in-out;
+}
+
+.highlited-active {
+    background-color: $info;
+    color: white;
+}
