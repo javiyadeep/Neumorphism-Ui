@@ -144,3 +144,15 @@ $enable-negative-margins: true !default;
 // Heading
 $headings-font-weight: 600 !default;
 $headings-color: #44476a;
+
+// Accordion
+$accordion-border-radius: 6px !default;
+$accordion-border-width: 0 !default;
+$accordion-button-bg: transparent !default;
+$accordion-bg: transparent !default;
+$accordion-button-active-bg: transparent !default;
+$accordion-button-active-color: #44476a !default;
+
+$accordion-icon-color: $muted !default;
+$accordion-icon-active-color: $muted !default;
+$accordion-icon-transition: transform .4s ease-in-out !default;
