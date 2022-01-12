@@ -5,15 +5,14 @@ Email: patelaleis@gmail.com
 File: scss
 */
 
-@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400;500;700;900&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=Raleway:wght@100;200;300;400;500;600;700;800;900&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400;500;700;900&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Raleway:wght@100;200;300;400;500;600;700;800;900&display=swap");
 
 // Variables - here you can change this global values of the UI Kit
-$font-family-sans-serif: 'Roboto',
+$font-family-sans-serif: "Roboto",
 sans-serif !default;
-$font-family-raleway: 'Raleway',
+$font-family-raleway: "Raleway",
 sans-serif;
-
 
 /*Theme Colors*/
 // $headingtext: #3e4555;
@@ -22,9 +21,6 @@ sans-serif;
 // $themecolor-alt: #2F3437;
 // $themecolor-dark: #403e72;
 // $themecolor-dark-alt: #464479;
-
-
-
 
 /*bootstrap Color*/
 $primary: #7367f0;
@@ -62,28 +58,28 @@ $grays: ("100": $gray-100,
   "600": $gray-600,
   "700": $gray-700,
   "800": $gray-800,
-  "900": $gray-900) !default;
-
+  "900": $gray-900,
+) !default;
 
 /*Normal Color*/
 $light: $gray-600;
 $white: #ffffff;
 $red: #fb3a3a;
 $yellow: #fed700;
-$purple: #05998B;
+$purple: #05998b;
 $blue: #02bec9;
 $megna: #1dc8cd;
-$orange:#ff6a5b;
+$orange: #ff6a5b;
 /*Extra Variable*/
 
 // Body Custom settings
 $text-muted: $muted !default;
 $body-bg: #e6e7ee !default;
+$body-color: #44476a !default;
 $shadow-in: inset 2px 2px 5px #b8b9be,
 inset -3px -3px 7px #fff;
 $shadow-out: 3px 3px 6px #b8b9be,
 -3px -3px 6px #fff;
-
 
 /*font-sizes*/
 $font-sizes: (1: 10px,
@@ -131,7 +127,8 @@ $border-widths: (1: 1px,
   2: 2px,
   3: 3px,
   4: 4px,
-  5: 5px) !default;
+  5: 5px,
+) !default;
 
 $border-color: #d1d9e6 !default;
 
@@ -141,9 +138,9 @@ $input-border-radius: 0px !default;
 
 // Card
 
-
 // Negative margin
 $enable-negative-margins: true !default;
 
 // Heading
 $headings-font-weight: 600 !default;
+$headings-color: #44476a;

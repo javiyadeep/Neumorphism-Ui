@@ -26,12 +26,11 @@ File: scss
  * Licensed under MIT (https://github.com/twbs/bootstrap/blob/main/LICENSE)
  */
 @import "../../scss/icons/font-awesome/css/fontawesome-all.css";
-@import "../../scss/icons/themify-icons/themify-icons.css";
-@import "../../scss/icons/simple-line-icons/css/simple-line-icons.css";
+@import "../../scss/icons/remix-icons/remixicon.css";
 :root {
   --bs-blue: #02bec9;
   --bs-indigo: #6610f2;
-  --bs-purple: #05998B;
+  --bs-purple: #05998b;
   --bs-pink: #d63384;
   --bs-red: #fb3a3a;
   --bs-orange: #ff6a5b;
@@ -69,7 +68,7 @@ File: scss
   --bs-dark-rgb: 49, 52, 72;
   --bs-white-rgb: 255, 255, 255;
   --bs-black-rgb: 0, 0, 0;
-  --bs-body-color-rgb: 33, 37, 41;
+  --bs-body-color-rgb: 68, 71, 106;
   --bs-body-bg-rgb: 230, 231, 238;
   --bs-font-sans-serif: "Roboto", sans-serif;
   --bs-font-monospace: SFMono-Regular, Menlo, Monaco, Consolas, "Liberation Mono", "Courier New", monospace;
@@ -78,7 +77,7 @@ File: scss
   --bs-body-font-size: 1rem;
   --bs-body-font-weight: 400;
   --bs-body-line-height: 1.5;
-  --bs-body-color: #212529;
+  --bs-body-color: #44476a;
   --bs-body-bg: #e6e7ee;
 }
 
@@ -124,6 +123,7 @@ h6, .h6, h5, .h5, h4, .h4, h3, .h3, h2, .h2, h1, .h1 {
   margin-bottom: 0.5rem;
   font-weight: 600;
   line-height: 1.2;
+  color: #44476a;
 }
 
 h1, .h1 {
@@ -1965,15 +1965,15 @@ progress {
 .table {
   --bs-table-bg: transparent;
   --bs-table-accent-bg: transparent;
-  --bs-table-striped-color: #212529;
+  --bs-table-striped-color: #44476a;
   --bs-table-striped-bg: rgba(0, 0, 0, 0.05);
-  --bs-table-active-color: #212529;
+  --bs-table-active-color: #44476a;
   --bs-table-active-bg: rgba(0, 0, 0, 0.1);
-  --bs-table-hover-color: #212529;
+  --bs-table-hover-color: #44476a;
   --bs-table-hover-bg: rgba(0, 0, 0, 0.075);
   width: 100%;
   margin-bottom: 1rem;
-  color: #212529;
+  color: #44476a;
   vertical-align: top;
   border-color: #d1d9e6;
 }
@@ -2198,7 +2198,7 @@ progress {
   font-size: 1rem;
   font-weight: 400;
   line-height: 1.5;
-  color: #212529;
+  color: #44476a;
   background-color: #e6e7ee;
   background-clip: padding-box;
   border: 0px solid #d5d5d5;
@@ -2218,7 +2218,7 @@ progress {
   cursor: pointer;
 }
 .form-control:focus {
-  color: #212529;
+  color: #44476a;
   background-color: #e6e7ee;
   border-color: #b9b3f8;
   outline: 0;
@@ -2239,7 +2239,7 @@ progress {
   padding: 0.375rem 0.75rem;
   margin: -0.375rem -0.75rem;
   margin-inline-end: 0.75rem;
-  color: #212529;
+  color: #44476a;
   background-color: #fcfcfc;
   pointer-events: none;
   border-color: inherit;
@@ -2261,7 +2261,7 @@ progress {
   padding: 0.375rem 0.75rem;
   margin: -0.375rem -0.75rem;
   margin-inline-end: 0.75rem;
-  color: #212529;
+  color: #44476a;
   background-color: #fcfcfc;
   pointer-events: none;
   border-color: inherit;
@@ -2286,7 +2286,7 @@ progress {
   padding: 0.375rem 0;
   margin-bottom: 0;
   line-height: 1.5;
-  color: #212529;
+  color: #44476a;
   background-color: transparent;
   border: solid transparent;
   border-width: 0px 0;
@@ -2365,7 +2365,7 @@ textarea.form-control-lg {
   font-size: 1rem;
   font-weight: 400;
   line-height: 1.5;
-  color: #212529;
+  color: #44476a;
   background-color: #e6e7ee;
   background-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 16 16'%3e%3cpath fill='none' stroke='%236c757d' stroke-linecap='round' stroke-linejoin='round' stroke-width='2' d='M2 5l6 6 6-6'/%3e%3c/svg%3e");
   background-repeat: no-repeat;
@@ -2395,7 +2395,7 @@ textarea.form-control-lg {
 }
 .form-select:-moz-focusring {
   color: transparent;
-  text-shadow: 0 0 0 #212529;
+  text-shadow: 0 0 0 #44476a;
 }
 
 .form-select-sm {
@@ -2684,7 +2684,7 @@ textarea.form-control-lg {
   font-size: 1rem;
   font-weight: 400;
   line-height: 1.5;
-  color: #212529;
+  color: #44476a;
   text-align: center;
   white-space: nowrap;
   background-color: #fcfcfc;
@@ -2913,7 +2913,7 @@ textarea.form-control-lg {
   display: inline-block;
   font-weight: 500;
   line-height: 1.5;
-  color: #212529;
+  color: #44476a;
   text-align: center;
   text-decoration: none;
   vertical-align: middle;
@@ -2932,7 +2932,7 @@ textarea.form-control-lg {
   }
 }
 .btn:hover {
-  color: #212529;
+  color: #44476a;
 }
 .btn-check:focus + .btn, .btn:focus {
   outline: 0;
@@ -3476,7 +3476,7 @@ textarea.form-control-lg {
   padding: 0.5rem 0;
   margin: 0;
   font-size: 1rem;
-  color: #212529;
+  color: #44476a;
   text-align: left;
   list-style: none;
   background-color: #ffffff;
@@ -4589,7 +4589,7 @@ textarea.form-control-lg {
   width: 100%;
   padding: 1rem 1.25rem;
   font-size: 1rem;
-  color: #212529;
+  color: #44476a;
   text-align: left;
   background-color: #e6e7ee;
   border: 0;
@@ -4617,7 +4617,7 @@ textarea.form-control-lg {
   height: 1.25rem;
   margin-left: auto;
   content: "";
-  background-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 16 16' fill='%23212529'%3e%3cpath fill-rule='evenodd' d='M1.646 4.646a.5.5 0 0 1 .708 0L8 10.293l5.646-5.647a.5.5 0 0 1 .708.708l-6 6a.5.5 0 0 1-.708 0l-6-6a.5.5 0 0 1 0-.708z'/%3e%3c/svg%3e");
+  background-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 16 16' fill='%2344476a'%3e%3cpath fill-rule='evenodd' d='M1.646 4.646a.5.5 0 0 1 .708 0L8 10.293l5.646-5.647a.5.5 0 0 1 .708.708l-6 6a.5.5 0 0 1-.708 0l-6-6a.5.5 0 0 1 0-.708z'/%3e%3c/svg%3e");
   background-repeat: no-repeat;
   background-size: 1.25rem;
   transition: transform 0.2s ease-in-out;
@@ -4995,7 +4995,7 @@ textarea.form-control-lg {
   background-color: #f5f4f4;
 }
 .list-group-item-action:active {
-  color: #212529;
+  color: #44476a;
   background-color: #fcfcfc;
 }
 
@@ -5877,6 +5877,7 @@ textarea.form-control-lg {
   padding: 0.5rem 1rem;
   margin-bottom: 0;
   font-size: 1rem;
+  color: #44476a;
   background-color: #f0f0f0;
   border-bottom: 1px solid rgba(0, 0, 0, 0.2);
   border-top-left-radius: calc(0.3rem - 1px);
@@ -5888,7 +5889,7 @@ textarea.form-control-lg {
 
 .popover-body {
   padding: 1rem 1rem;
-  color: #212529;
+  color: #44476a;
 }
 
 .carousel {
