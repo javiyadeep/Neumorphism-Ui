@@ -1,6 +1,6 @@
 # Air
 
-|✦| Live demo: https://javiyadeep.github.io/air
+|✦| Live demo: https://javiyadeep.github.io/Neumorphism-Ui/
 
 |✦| GitHub repository: https://github.com/javiyadeep/Neumorphism-Ui
 
