@@ -4427,10 +4427,10 @@ textarea.form-control-lg {
   flex-direction: column;
   min-width: 0;
   word-wrap: break-word;
-  background-color: #ffffff;
+  background-color: transparent;
   background-clip: border-box;
   border: 1px solid rgba(0, 0, 0, 0.125);
-  border-radius: 0.25rem;
+  border-radius: 0.55rem;
 }
 .card > hr {
   margin-right: 0;
@@ -4442,13 +4442,13 @@ textarea.form-control-lg {
 }
 .card > .list-group:first-child {
   border-top-width: 0;
-  border-top-left-radius: calc(0.25rem - 1px);
-  border-top-right-radius: calc(0.25rem - 1px);
+  border-top-left-radius: calc(0.55rem - 1px);
+  border-top-right-radius: calc(0.55rem - 1px);
 }
 .card > .list-group:last-child {
   border-bottom-width: 0;
-  border-bottom-right-radius: calc(0.25rem - 1px);
-  border-bottom-left-radius: calc(0.25rem - 1px);
+  border-bottom-right-radius: calc(0.55rem - 1px);
+  border-bottom-left-radius: calc(0.55rem - 1px);
 }
 .card > .card-header + .list-group,
 .card > .list-group + .card-footer {
@@ -4457,7 +4457,7 @@ textarea.form-control-lg {
 
 .card-body {
   flex: 1 1 auto;
-  padding: 1rem 1rem;
+  padding: 24px 24px;
 }
 
 .card-title {
@@ -4474,42 +4474,42 @@ textarea.form-control-lg {
 }
 
 .card-link + .card-link {
-  margin-left: 1rem;
+  margin-left: 24px;
 }
 
 .card-header {
-  padding: 0.5rem 1rem;
+  padding: 12px 24px;
   margin-bottom: 0;
   background-color: rgba(0, 0, 0, 0.03);
   border-bottom: 1px solid rgba(0, 0, 0, 0.125);
 }
 .card-header:first-child {
-  border-radius: calc(0.25rem - 1px) calc(0.25rem - 1px) 0 0;
+  border-radius: calc(0.55rem - 1px) calc(0.55rem - 1px) 0 0;
 }
 
 .card-footer {
-  padding: 0.5rem 1rem;
+  padding: 12px 24px;
   background-color: rgba(0, 0, 0, 0.03);
   border-top: 1px solid rgba(0, 0, 0, 0.125);
 }
 .card-footer:last-child {
-  border-radius: 0 0 calc(0.25rem - 1px) calc(0.25rem - 1px);
+  border-radius: 0 0 calc(0.55rem - 1px) calc(0.55rem - 1px);
 }
 
 .card-header-tabs {
-  margin-right: -0.5rem;
-  margin-bottom: -0.5rem;
-  margin-left: -0.5rem;
+  margin-right: -12px;
+  margin-bottom: -12px;
+  margin-left: -12px;
   border-bottom: 0;
 }
 .card-header-tabs .nav-link.active {
-  background-color: #ffffff;
-  border-bottom-color: #ffffff;
+  background-color: transparent;
+  border-bottom-color: transparent;
 }
 
 .card-header-pills {
-  margin-right: -0.5rem;
-  margin-left: -0.5rem;
+  margin-right: -12px;
+  margin-left: -12px;
 }
 
 .card-img-overlay {
@@ -4519,7 +4519,7 @@ textarea.form-control-lg {
   bottom: 0;
   left: 0;
   padding: 1rem;
-  border-radius: calc(0.25rem - 1px);
+  border-radius: calc(0.55rem - 1px);
 }
 
 .card-img,
@@ -4530,14 +4530,14 @@ textarea.form-control-lg {
 
 .card-img,
 .card-img-top {
-  border-top-left-radius: calc(0.25rem - 1px);
-  border-top-right-radius: calc(0.25rem - 1px);
+  border-top-left-radius: calc(0.55rem - 1px);
+  border-top-right-radius: calc(0.55rem - 1px);
 }
 
 .card-img,
 .card-img-bottom {
-  border-bottom-right-radius: calc(0.25rem - 1px);
-  border-bottom-left-radius: calc(0.25rem - 1px);
+  border-bottom-right-radius: calc(0.55rem - 1px);
+  border-bottom-left-radius: calc(0.55rem - 1px);
 }
 
 .card-group > .card {
@@ -12120,6 +12120,14 @@ ul {
 
 .hide {
   display: none;
+}
+
+.card {
+  margin-bottom: 24px;
+}
+
+.rounded-lg {
+  border-radius: 0.55rem;
 }
 
 .op-7 {

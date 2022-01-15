@@ -542,18 +542,82 @@
   </section>
   <!-- Inset Shadow End -->
 
-  <!-- Inset Shadow Start -->
+  <!-- Badges Start -->
   <section class="spacer">
     <div class="container">
-      <p class="fs-7 text-center mb-1">Badges <a href="#code4" class="ms-2 text-danger code-btn4"><i
+      <p class="fs-7 text-center mb-1">Badges <a href="#code5" class="ms-2 text-danger code-btn5"><i
             class="fa fa-code"></i></a></p>
       <p class="fs-3 text-center mb-5 text-danger">Click on the code button above to see the following component code
       </p>
-      <div id="code4" class="code-view4 shadow-out mb-5">
+      <div id="code5" class="code-view5 shadow-out mb-5">
         <div class="highlight">
           <pre>
         <code class="language-html">
-          
+          &lt;div&gt;
+            &lt;p class=&quot;text-center fs-4 mb-4&quot;&gt;Default Badges&lt;/p&gt;
+            &lt;div class=&quot;d-flex justify-content-center&quot;&gt;
+              &lt;p&gt;&lt;span class=&quot;badge shadow-in text-dark me-2&quot;&gt;Dark Badge&lt;/span&gt;&lt;/p&gt;
+              &lt;p&gt;&lt;span class=&quot;badge shadow-in text-primary me-2&quot;&gt;Primary Badge&lt;/span&gt;&lt;/p&gt;
+              &lt;p&gt;&lt;span class=&quot;badge shadow-in text-success me-2&quot;&gt;Success Badge&lt;/span&gt;&lt;/p&gt;
+              &lt;p&gt;&lt;span class=&quot;badge shadow-in text-danger me-2&quot;&gt;Danger Badge&lt;/span&gt;&lt;/p&gt;
+              &lt;p&gt;&lt;span class=&quot;badge shadow-in text-warning me-2&quot;&gt;Warning Badge&lt;/span&gt;&lt;/p&gt;
+              &lt;p&gt;&lt;span class=&quot;badge shadow-in text-info me-2&quot;&gt;Info Badge&lt;/span&gt;&lt;/p&gt;
+            &lt;/div&gt;
+          &lt;/div&gt;
+
+          &lt;div&gt;
+            &lt;p class=&quot;text-center fs-4 mt-4 mb-4&quot;&gt;Rounded Pill Badges&lt;/p&gt;
+            &lt;div class=&quot;d-flex justify-content-center&quot;&gt;
+              &lt;p&gt;&lt;span class=&quot;badge shadow-in rounded-pill text-dark me-2&quot;&gt;Dark Badge&lt;/span&gt;&lt;/p&gt;
+              &lt;p&gt;&lt;span class=&quot;badge shadow-in rounded-pill text-primary me-2&quot;&gt;Primary Badge&lt;/span&gt;&lt;/p&gt;
+              &lt;p&gt;&lt;span class=&quot;badge shadow-in rounded-pill text-success me-2&quot;&gt;Success Badge&lt;/span&gt;&lt;/p&gt;
+              &lt;p&gt;&lt;span class=&quot;badge shadow-in rounded-pill text-danger me-2&quot;&gt;Danger Badge&lt;/span&gt;&lt;/p&gt;
+              &lt;p&gt;&lt;span class=&quot;badge shadow-in rounded-pill text-warning me-2&quot;&gt;Warning Badge&lt;/span&gt;&lt;/p&gt;
+              &lt;p&gt;&lt;span class=&quot;badge shadow-in rounded-pill text-info me-2&quot;&gt;Info Badge&lt;/span&gt;&lt;/p&gt;
+            &lt;/div&gt;
+          &lt;/div&gt;
+
+          &lt;div class=&quot;pb-2&quot;&gt;
+            &lt;p class=&quot;text-center fs-4 mt-4 mb-4&quot;&gt;Link Badges&lt;/p&gt;
+            &lt;div class=&quot;d-flex justify-content-center&quot;&gt;
+              &lt;a href=&quot;javascript:void(0)&quot;&gt;&lt;span class=&quot;badge shadow-in text-dark me-2&quot;&gt;Dark Badge&lt;/span&gt;&lt;/a&gt;
+              &lt;a href=&quot;javascript:void(0)&quot;&gt;&lt;span class=&quot;badge shadow-in text-primary me-2&quot;&gt;Primary Badge&lt;/span&gt;&lt;/a&gt;
+              &lt;a href=&quot;javascript:void(0)&quot;&gt;&lt;span class=&quot;badge shadow-in text-success me-2&quot;&gt;Success Badge&lt;/span&gt;&lt;/a&gt;
+              &lt;a href=&quot;javascript:void(0)&quot;&gt;&lt;span class=&quot;badge shadow-in text-danger me-2&quot;&gt;Danger Badge&lt;/span&gt;&lt;/a&gt;
+              &lt;a href=&quot;javascript:void(0)&quot;&gt;&lt;span class=&quot;badge shadow-in text-warning me-2&quot;&gt;Warning Badge&lt;/span&gt;&lt;/a&gt;
+              &lt;a href=&quot;javascript:void(0)&quot;&gt;&lt;span class=&quot;badge shadow-in text-info me-2&quot;&gt;Info Badge&lt;/span&gt;&lt;/a&gt;
+            &lt;/div&gt;
+          &lt;/div&gt;
+
+          &lt;div&gt;
+            &lt;p class=&quot;text-center fs-4 mt-4 mb-4&quot;&gt;Buttons Badges&lt;/p&gt;
+            &lt;div class=&quot;d-flex justify-content-center&quot;&gt;
+              &lt;button type=&quot;button&quot; class=&quot;btn text-dark shadow-out-hover px-4 py-2&quot;&gt;
+                Notifications &lt;span class=&quot;badge shadow-in text-danger&quot;&gt;5&lt;/span&gt;
+              &lt;/button&gt;
+            &lt;/div&gt;
+          &lt;/div&gt;
+
+          &lt;div&gt;
+            &lt;p class=&quot;text-center fs-4 pt-3 mt-4 mb-4&quot;&gt;Positioned&lt;/p&gt;
+            &lt;div class=&quot;text-center&quot;&gt;
+              &lt;button type=&quot;button&quot; class=&quot;btn me-5 px-4 py-2 shadow-in-hover position-relative&quot;&gt;
+                Inbox
+                &lt;span
+                  class=&quot;position-absolute top-0 start-100 translate-middle badge rounded-pill bg-danger shadow-out text-white&quot;&gt;
+                  99+
+                  &lt;span class=&quot;visually-hidden&quot;&gt;unread messages&lt;/span&gt;
+                &lt;/span&gt;
+              &lt;/button&gt;
+
+              &lt;button type=&quot;button&quot; class=&quot;btn px-4 py-2 shadow-in-hover position-relative&quot;&gt;
+                Profile
+                &lt;span
+                  class=&quot;position-absolute top-0 shadow-out start-100 translate-middle p-2 bg-danger border border-light rounded-circle&quot;&gt;
+                &lt;/span&gt;
+              &lt;/button&gt;
+            &lt;/div&gt;
+          &lt;/div&gt;
         </code>
       </pre>
         </div>
@@ -604,11 +668,105 @@
               </button>
             </div>
           </div>
+
+          <div>
+            <p class="text-center fs-4 pt-3 mt-4 mb-4">Positioned</p>
+            <div class="text-center">
+              <button type="button" class="btn me-5 px-4 py-2 shadow-in-hover position-relative">
+                Inbox
+                <span
+                  class="position-absolute top-0 start-100 translate-middle badge rounded-pill bg-danger shadow-out text-white">
+                  99+
+                  <span class="visually-hidden">unread messages</span>
+                </span>
+              </button>
+
+              <button type="button" class="btn px-4 py-2 shadow-in-hover position-relative">
+                Profile
+                <span
+                  class="position-absolute top-0 shadow-out start-100 translate-middle p-2 bg-danger border border-light rounded-circle">
+                </span>
+              </button>
+            </div>
+          </div>
         </div>
       </div>
     </div>
   </section>
-  <!-- Inset Shadow End -->
+  <!-- Badges End -->
+
+  <!-- Blog Cards Start -->
+  <section>
+    <div class="container">
+      <p class="fs-7 text-center mb-1">Blog Cards <a href="#code4" class="ms-2 text-danger code-btn4"><i
+            class="fa fa-code"></i></a></p>
+      <p class="fs-3 text-center mb-5 text-danger">Click on the code button above to see the following component code
+      </p>
+      <div id="code4" class="code-view4 shadow-out mb-5">
+        <div class="highlight">
+          <pre>
+        <code class="language-html">
+
+        </code>
+      </pre>
+        </div>
+      </div>
+      <div class="row mb-5">
+        <div class="col-lg-4">
+          <div class="card overflow-hidden shadow-out">
+            <img src="./dist/images/blog-article-1.jpeg" class="card-img-top" alt="">
+            <div class="card-body">
+              <p class="fw-lighter"><i class="fas fa-seedling me-2"></i> Awards</p>
+              <h5 class="fw-normal mb-3">We partnered up with Google</h5>
+              <p class="fw-lighter">Some quick example text to build on the card title and make up the bulk of the
+                card's content.</p>
+              <a href="#" class="btn shadow-out-hover mt-3">Learn More</a>
+            </div>
+          </div>
+        </div>
+
+        <div class="col-lg-4">
+          <div class="card overflow-hidden shadow-out">
+            <div class="p-3">
+              <div class="shadow-out overflow-hidden">
+                <img src="./dist/images/blog-article-1.jpeg" class="card-img-top" alt="">
+              </div>
+            </div>
+            <div class="card-body">
+              <p class="fw-lighter"><i class="fas fa-calendar-alt me-2"></i> 15 March 2020</p>
+              <h5 class="fw-normal mb-3">We partnered up with Google</h5>
+              <p class="fw-lighter">Some quick example text to build on the card title and make up the bulk of the
+                card's content.</p>
+              <a href="#" class="btn shadow-out-hover mt-3">Learn More</a>
+            </div>
+          </div>
+        </div>
+
+        <div class="col-lg-4">
+          <div class="card text-center overflow-hidden shadow-out">
+            <div class="card-body">
+              <p class="fw-lighter"><i class="fas fa-seedling me-2"></i> Awards</p>
+              <h5 class="fw-normal mb-3">We partnered up with Google</h5>
+              <p class="fw-lighter">Some quick example text to build on the card title and make up the bulk of the
+                card's content.</p>
+              <a href="#" class="btn shadow-out-hover mt-3">Learn More</a>
+            </div>
+          </div>
+
+          <div class="card overflow-hidden shadow-in">
+            <div class="card-body">
+              <p class="fw-lighter"><i class="fas fa-seedling me-2"></i> Awards</p>
+              <h5 class="fw-normal mb-3">We partnered up with Google</h5>
+              <p class="fw-lighter">Some quick example text to build on the card title and make up the bulk of the
+                card's content.</p>
+              <a href="#" class="btn shadow-out-hover mt-3">Learn More</a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+  <!-- Blog Cards End -->
   <!-- ============================================================== -->
   <!-- Page Wrapper End -->
   <!-- ============================================================== -->

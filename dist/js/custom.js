@@ -18,4 +18,9 @@ $(document).ready(function () {
     $(".code-view4").toggle(600);
     $(".code-view4").css("display", "block");
   });
+
+  $(".code-btn5").click(function () {
+    $(".code-view5").toggle(600);
+    $(".code-view5").css("display", "block");
+  });
 });

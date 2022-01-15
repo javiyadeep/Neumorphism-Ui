@@ -137,6 +137,10 @@ $input-border-width: 0px !default;
 $input-border-radius: 0px !default;
 
 // Card
+$card-bg: transparent !default;
+$card-spacer-y: 24px !default;
+$card-spacer-x: 24px !default;
+$card-border-radius: 0.55rem !default;
 
 // Negative margin
 $enable-negative-margins: true !default;
@@ -146,8 +150,8 @@ $headings-font-weight: 600 !default;
 $headings-color: #44476a;
 
 // Badge
-$badge-padding-y:                   0.65em !default;
-$badge-padding-x:                   1.4em !default;
+$badge-padding-y: 0.65em !default;
+$badge-padding-x: 1.4em !default;
 
 // Accordion
 $accordion-border-radius: 6px !default;
@@ -161,7 +165,7 @@ $accordion-icon-color: $muted !default;
 $accordion-icon-active-color: $muted !default;
 $accordion-icon-transition: transform .5s ease-in-out !default;
 
-$accordion-icon-width:                    0.8rem !default;
-$accordion-icon-transform:                rotate(-315deg) !default;
-$accordion-button-icon:         url("../../dist/images/plus2.svg") !default;
-$accordion-button-active-icon:  url("../../dist/images/plus2.svg") !default;
+$accordion-icon-width: 0.8rem !default;
+$accordion-icon-transform: rotate(-315deg) !default;
+$accordion-button-icon: url("../../dist/images/plus2.svg") !default;
+$accordion-button-active-icon: url("../../dist/images/plus2.svg") !default;
