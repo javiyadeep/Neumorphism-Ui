@@ -16,6 +16,7 @@
 
   <!-- Common style CSS -->
   <link href="./dist/css/style.css" rel="stylesheet" />
+  <link rel="stylesheet" href="./assets/libs/prism/prism.css">
 </head>
 
 <body>
@@ -133,46 +134,137 @@
   </section>
   <!-- Summary End -->
 
-  <!-- Accordion Start -->
+  <!-- Default Accordion Start -->
   <section class="spacer">
     <div class="container">
-      <p class="fs-7 text-center">Default Accordion</p>
-      <div class="row">
+      <p class="fs-7 text-center mb-1">Default Accordion <a href="#code1" class="ms-2 text-danger code-btn1"><i
+            class="fa fa-code"></i></a></p>
+      <p class="fs-3 text-center mb-5 text-danger">Click on the code button above to see the following component code
+      </p>
+      <div id="code1" class="code-view1 shadow-out mb-5">
+        <div class="highlight">
+          <pre>
+            <code class="language-html">
+              &lt;div class=&quot;accordion&quot; id=&quot;accordionExample&quot;&gt;
+            &lt;div class=&quot;accordion-item shadow-out&quot;&gt;
+              &lt;h2 class=&quot;accordion-header&quot; id=&quot;headingOne&quot;&gt;
+                &lt;button class=&quot;accordion-button&quot; type=&quot;button&quot; data-bs-toggle=&quot;collapse&quot; data-bs-target=&quot;#collapseOne&quot;
+                  aria-expanded=&quot;true&quot; aria-controls=&quot;collapseOne&quot;&gt;
+                  Our Company
+                &lt;/button&gt;
+              &lt;/h2&gt;
+              &lt;div id=&quot;collapseOne&quot; class=&quot;accordion-collapse collapse show&quot; aria-labelledby=&quot;headingOne&quot;
+                data-bs-parent=&quot;#accordionExample&quot;&gt;
+                &lt;div class=&quot;accordion-body&quot;&gt;
+                  &lt;div class=&quot;fw-lighter&quot;&gt;
+                    At Themesberg, our mission has always been focused on bringing openness and transparency to the
+                    design process. We&#39;ve always believed that by providing a space where designers can share ongoing
+                    work not only empowers them to make better products, it also helps them grow. We&#39;re proud to be a
+                    part of creating a more open culture and to continue building a product that supports this vision.
+                  &lt;/div&gt;
+                &lt;/div&gt;
+              &lt;/div&gt;
+            &lt;/div&gt;
+            &lt;div class=&quot;accordion-item shadow-out&quot;&gt;
+              &lt;h2 class=&quot;accordion-header&quot; id=&quot;headingTwo&quot;&gt;
+                &lt;button class=&quot;accordion-button collapsed&quot; type=&quot;button&quot; data-bs-toggle=&quot;collapse&quot;
+                  data-bs-target=&quot;#collapseTwo&quot; aria-expanded=&quot;false&quot; aria-controls=&quot;collapseTwo&quot;&gt;
+                  Neumorphism Components
+                &lt;/button&gt;
+              &lt;/h2&gt;
+              &lt;div id=&quot;collapseTwo&quot; class=&quot;accordion-collapse collapse&quot; aria-labelledby=&quot;headingTwo&quot;
+                data-bs-parent=&quot;#accordionExample&quot;&gt;
+                &lt;div class=&quot;accordion-body&quot;&gt;
+                  &lt;div class=&quot;fw-lighter&quot;&gt;
+                    At Themesberg, our mission has always been focused on bringing openness and transparency to the
+                    design process. We&#39;ve always believed that by providing a space where designers can share ongoing
+                    work not only empowers them to make better products, it also helps them grow. We&#39;re proud to be a
+                    part of creating a more open culture and to continue building a product that supports this vision.
+                  &lt;/div&gt;
+                &lt;/div&gt;
+              &lt;/div&gt;
+            &lt;/div&gt;
+            &lt;div class=&quot;accordion-item shadow-out&quot;&gt;
+              &lt;h2 class=&quot;accordion-header&quot; id=&quot;headingThree&quot;&gt;
+                &lt;button class=&quot;accordion-button collapsed&quot; type=&quot;button&quot; data-bs-toggle=&quot;collapse&quot;
+                  data-bs-target=&quot;#collapseThree&quot; aria-expanded=&quot;false&quot; aria-controls=&quot;collapseThree&quot;&gt;
+                  Licenses
+                &lt;/button&gt;
+              &lt;/h2&gt;
+              &lt;div id=&quot;collapseThree&quot; class=&quot;accordion-collapse collapse&quot; aria-labelledby=&quot;headingThree&quot;
+                data-bs-parent=&quot;#accordionExample&quot;&gt;
+                &lt;div class=&quot;accordion-body&quot;&gt;
+                  &lt;div class=&quot;fw-lighter&quot;&gt;
+                    At Themesberg, our mission has always been focused on bringing openness and transparency to the
+                    design process. We&#39;ve always believed that by providing a space where designers can share ongoing
+                    work not only empowers them to make better products, it also helps them grow. We&#39;re proud to be a
+                    part of creating a more open culture and to continue building a product that supports this vision.
+                  &lt;/div&gt;
+                &lt;/div&gt;
+              &lt;/div&gt;
+            &lt;/div&gt;
+          &lt;/div&gt;
+            </code>
+          </pre>
+        </div>
+      </div>
+      <div class="row justify-content-center">
         <div class="col-lg-8">
           <div class="accordion" id="accordionExample">
             <div class="accordion-item shadow-out">
               <h2 class="accordion-header" id="headingOne">
-                <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
-                  Accordion Item #1
+                <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#collapseOne"
+                  aria-expanded="true" aria-controls="collapseOne">
+                  Our Company
                 </button>
               </h2>
-              <div id="collapseOne" class="accordion-collapse collapse show" aria-labelledby="headingOne" data-bs-parent="#accordionExample">
+              <div id="collapseOne" class="accordion-collapse collapse show" aria-labelledby="headingOne"
+                data-bs-parent="#accordionExample">
                 <div class="accordion-body">
-                  <strong>This is the first item's accordion body.</strong> It is shown by default, until the collapse plugin adds the appropriate classes that we use to style each element. These classes control the overall appearance, as well as the showing and hiding via CSS transitions. You can modify any of this with custom CSS or overriding our default variables. It's also worth noting that just about any HTML can go within the <code>.accordion-body</code>, though the transition does limit overflow.
+                  <div class="fw-lighter">
+                    At Themesberg, our mission has always been focused on bringing openness and transparency to the
+                    design process. We've always believed that by providing a space where designers can share ongoing
+                    work not only empowers them to make better products, it also helps them grow. We're proud to be a
+                    part of creating a more open culture and to continue building a product that supports this vision.
+                  </div>
                 </div>
               </div>
             </div>
             <div class="accordion-item shadow-out">
               <h2 class="accordion-header" id="headingTwo">
-                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
-                  Accordion Item #2
+                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                  data-bs-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
+                  Neumorphism Components
                 </button>
               </h2>
-              <div id="collapseTwo" class="accordion-collapse collapse" aria-labelledby="headingTwo" data-bs-parent="#accordionExample">
+              <div id="collapseTwo" class="accordion-collapse collapse" aria-labelledby="headingTwo"
+                data-bs-parent="#accordionExample">
                 <div class="accordion-body">
-                  <strong>This is the second item's accordion body.</strong> It is hidden by default, until the collapse plugin adds the appropriate classes that we use to style each element. These classes control the overall appearance, as well as the showing and hiding via CSS transitions. You can modify any of this with custom CSS or overriding our default variables. It's also worth noting that just about any HTML can go within the <code>.accordion-body</code>, though the transition does limit overflow.
+                  <div class="fw-lighter">
+                    At Themesberg, our mission has always been focused on bringing openness and transparency to the
+                    design process. We've always believed that by providing a space where designers can share ongoing
+                    work not only empowers them to make better products, it also helps them grow. We're proud to be a
+                    part of creating a more open culture and to continue building a product that supports this vision.
+                  </div>
                 </div>
               </div>
             </div>
             <div class="accordion-item shadow-out">
               <h2 class="accordion-header" id="headingThree">
-                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
-                  Accordion Item #3
+                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                  data-bs-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
+                  Licenses
                 </button>
               </h2>
-              <div id="collapseThree" class="accordion-collapse collapse" aria-labelledby="headingThree" data-bs-parent="#accordionExample">
+              <div id="collapseThree" class="accordion-collapse collapse" aria-labelledby="headingThree"
+                data-bs-parent="#accordionExample">
                 <div class="accordion-body">
-                  <strong>This is the third item's accordion body.</strong> It is hidden by default, until the collapse plugin adds the appropriate classes that we use to style each element. These classes control the overall appearance, as well as the showing and hiding via CSS transitions. You can modify any of this with custom CSS or overriding our default variables. It's also worth noting that just about any HTML can go within the <code>.accordion-body</code>, though the transition does limit overflow.
+                  <div class="fw-lighter">
+                    At Themesberg, our mission has always been focused on bringing openness and transparency to the
+                    design process. We've always believed that by providing a space where designers can share ongoing
+                    work not only empowers them to make better products, it also helps them grow. We're proud to be a
+                    part of creating a more open culture and to continue building a product that supports this vision.
+                  </div>
                 </div>
               </div>
             </div>
@@ -181,7 +273,342 @@
       </div>
     </div>
   </section>
-  <!-- Accordion End -->
+  <!-- Default Accordion End -->
+
+  <!-- Accordion With Icon Start -->
+  <section>
+    <div class="container">
+      <p class="fs-7 text-center mb-1">Accordion with icons <a href="#code2" class="ms-2 text-danger code-btn2"><i
+            class="fa fa-code"></i></a></p>
+      <p class="fs-3 text-center mb-5 text-danger">Click on the code button above to see the following component code
+      </p>
+      <div id="code2" class="code-view2 shadow-out mb-5">
+        <div class="highlight">
+          <pre>
+            <code class="language-html">
+              &lt;div class=&quot;accordion&quot; id=&quot;accordion2&quot;&gt;
+            &lt;div class=&quot;accordion-item shadow-out&quot;&gt;
+              &lt;h2 class=&quot;accordion-header&quot; id=&quot;headingFour&quot;&gt;
+                &lt;button class=&quot;accordion-button&quot; type=&quot;button&quot; data-bs-toggle=&quot;collapse&quot; data-bs-target=&quot;#collapseFour&quot;
+                  aria-expanded=&quot;true&quot; aria-controls=&quot;collapseFour&quot;&gt;
+                  &lt;i class=&quot;fas fa-briefcase me-2&quot;&gt;&lt;/i&gt; Our Company
+                &lt;/button&gt;
+              &lt;/h2&gt;
+              &lt;div id=&quot;collapseFour&quot; class=&quot;accordion-collapse collapse show&quot; aria-labelledby=&quot;headingFour&quot;
+                data-bs-parent=&quot;#accordion2&quot;&gt;
+                &lt;div class=&quot;accordion-body&quot;&gt;
+                  &lt;div class=&quot;fw-lighter&quot;&gt;
+                    At Themesberg, our mission has always been focused on bringing openness and transparency to the
+                    design process. We&#39;ve always believed that by providing a space where designers can share ongoing
+                    work not only empowers them to make better products, it also helps them grow. We&#39;re proud to be a
+                    part of creating a more open culture and to continue building a product that supports this vision.
+                  &lt;/div&gt;
+                &lt;/div&gt;
+              &lt;/div&gt;
+            &lt;/div&gt;
+            &lt;div class=&quot;accordion-item shadow-out&quot;&gt;
+              &lt;h2 class=&quot;accordion-header&quot; id=&quot;headingFive&quot;&gt;
+                &lt;button class=&quot;accordion-button collapsed&quot; type=&quot;button&quot; data-bs-toggle=&quot;collapse&quot;
+                  data-bs-target=&quot;#collapseFive&quot; aria-expanded=&quot;false&quot; aria-controls=&quot;collapseFive&quot;&gt;
+                  &lt;i class=&quot;fas fa-box-open me-2&quot;&gt;&lt;/i&gt; Neumorphism Components
+                &lt;/button&gt;
+              &lt;/h2&gt;
+              &lt;div id=&quot;collapseFive&quot; class=&quot;accordion-collapse collapse&quot; aria-labelledby=&quot;headingFive&quot;
+                data-bs-parent=&quot;#accordion2&quot;&gt;
+                &lt;div class=&quot;accordion-body&quot;&gt;
+                  &lt;div class=&quot;fw-lighter&quot;&gt;
+                    At Themesberg, our mission has always been focused on bringing openness and transparency to the
+                    design process. We&#39;ve always believed that by providing a space where designers can share ongoing
+                    work not only empowers them to make better products, it also helps them grow. We&#39;re proud to be a
+                    part of creating a more open culture and to continue building a product that supports this vision.
+                  &lt;/div&gt;
+                &lt;/div&gt;
+              &lt;/div&gt;
+            &lt;/div&gt;
+            &lt;div class=&quot;accordion-item shadow-out&quot;&gt;
+              &lt;h2 class=&quot;accordion-header&quot; id=&quot;headingSix&quot;&gt;
+                &lt;button class=&quot;accordion-button collapsed&quot; type=&quot;button&quot; data-bs-toggle=&quot;collapse&quot;
+                  data-bs-target=&quot;#collapseSex&quot; aria-expanded=&quot;false&quot; aria-controls=&quot;collapseSex&quot;&gt;
+                  &lt;i class=&quot;fas fa-certificate me-2&quot;&gt;&lt;/i&gt; Licenses
+                &lt;/button&gt;
+              &lt;/h2&gt;
+              &lt;div id=&quot;collapseSex&quot; class=&quot;accordion-collapse collapse&quot; aria-labelledby=&quot;headingSix&quot;
+                data-bs-parent=&quot;#accordion2&quot;&gt;
+                &lt;div class=&quot;accordion-body&quot;&gt;
+                  &lt;div class=&quot;fw-lighter&quot;&gt;
+                    At Themesberg, our mission has always been focused on bringing openness and transparency to the
+                    design process. We&#39;ve always believed that by providing a space where designers can share ongoing
+                    work not only empowers them to make better products, it also helps them grow. We&#39;re proud to be a
+                    part of creating a more open culture and to continue building a product that supports this vision.
+                  &lt;/div&gt;
+                &lt;/div&gt;
+              &lt;/div&gt;
+            &lt;/div&gt;
+          &lt;/div&gt;
+            </code>
+          </pre>
+        </div>
+      </div>
+      <div class="row justify-content-center">
+        <div class="col-lg-8">
+          <div class="accordion" id="accordion2">
+            <div class="accordion-item shadow-out">
+              <h2 class="accordion-header" id="headingFour">
+                <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#collapseFour"
+                  aria-expanded="true" aria-controls="collapseFour">
+                  <i class="fas fa-briefcase me-2"></i> Our Company
+                </button>
+              </h2>
+              <div id="collapseFour" class="accordion-collapse collapse show" aria-labelledby="headingFour"
+                data-bs-parent="#accordion2">
+                <div class="accordion-body">
+                  <div class="fw-lighter">
+                    At Themesberg, our mission has always been focused on bringing openness and transparency to the
+                    design process. We've always believed that by providing a space where designers can share ongoing
+                    work not only empowers them to make better products, it also helps them grow. We're proud to be a
+                    part of creating a more open culture and to continue building a product that supports this vision.
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="accordion-item shadow-out">
+              <h2 class="accordion-header" id="headingFive">
+                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                  data-bs-target="#collapseFive" aria-expanded="false" aria-controls="collapseFive">
+                  <i class="fas fa-box-open me-2"></i> Neumorphism Components
+                </button>
+              </h2>
+              <div id="collapseFive" class="accordion-collapse collapse" aria-labelledby="headingFive"
+                data-bs-parent="#accordion2">
+                <div class="accordion-body">
+                  <div class="fw-lighter">
+                    At Themesberg, our mission has always been focused on bringing openness and transparency to the
+                    design process. We've always believed that by providing a space where designers can share ongoing
+                    work not only empowers them to make better products, it also helps them grow. We're proud to be a
+                    part of creating a more open culture and to continue building a product that supports this vision.
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="accordion-item shadow-out">
+              <h2 class="accordion-header" id="headingSix">
+                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                  data-bs-target="#collapseSex" aria-expanded="false" aria-controls="collapseSex">
+                  <i class="fas fa-certificate me-2"></i> Licenses
+                </button>
+              </h2>
+              <div id="collapseSex" class="accordion-collapse collapse" aria-labelledby="headingSix"
+                data-bs-parent="#accordion2">
+                <div class="accordion-body">
+                  <div class="fw-lighter">
+                    At Themesberg, our mission has always been focused on bringing openness and transparency to the
+                    design process. We've always believed that by providing a space where designers can share ongoing
+                    work not only empowers them to make better products, it also helps them grow. We're proud to be a
+                    part of creating a more open culture and to continue building a product that supports this vision.
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+  <!-- Accordion With Icon End -->
+
+  <!-- Default Alerts Start -->
+  <section class="spacer">
+    <div class="container">
+      <p class="fs-7 text-center mb-1">Default Alerts <a href="#code3" class="ms-2 text-danger code-btn3"><i
+            class="fa fa-code"></i></a></p>
+      <p class="fs-3 text-center mb-5 text-danger">Click on the code button above to see the following component code
+      </p>
+      <div id="code3" class="code-view3 shadow-out mb-5">
+        <div class="highlight">
+          <pre>
+        <code class="language-html">
+          &lt;div&gt;
+            &lt;div class=&quot;alert text-primary shadow-out mb-4&quot; role=&quot;alert&quot;&gt;
+              A simple primary alert—check it out!
+            &lt;/div&gt;
+            &lt;div class=&quot;alert text-success shadow-out mb-4&quot; role=&quot;alert&quot;&gt;
+              A simple primary alert—check it out!
+            &lt;/div&gt;
+            &lt;div class=&quot;alert text-danger shadow-out mb-4&quot; role=&quot;alert&quot;&gt;
+              A simple primary alert—check it out!
+            &lt;/div&gt;
+            &lt;div class=&quot;alert text-warning shadow-out mb-4&quot; role=&quot;alert&quot;&gt;
+              A simple primary alert—check it out!
+            &lt;/div&gt;
+            &lt;div class=&quot;alert text-info shadow-out mb-4&quot; role=&quot;alert&quot;&gt;
+              A simple primary alert—check it out!
+            &lt;/div&gt;
+            &lt;div class=&quot;alert text-dark shadow-out mb-4&quot; role=&quot;alert&quot;&gt;
+              A simple primary alert—check it out!
+            &lt;/div&gt;
+          &lt;/div&gt;
+        </code>
+      </pre>
+        </div>
+      </div>
+      <div class="row justify-content-center">
+        <div class="col-lg-8">
+          <div>
+            <div class="alert text-primary shadow-out mb-4" role="alert">
+              A simple primary alert—check it out!
+            </div>
+            <div class="alert text-success shadow-out mb-4" role="alert">
+              A simple success alert—check it out!
+            </div>
+            <div class="alert text-danger shadow-out mb-4" role="alert">
+              A simple danger alert—check it out!
+            </div>
+            <div class="alert text-warning shadow-out mb-4" role="alert">
+              A simple warning alert—check it out!
+            </div>
+            <div class="alert text-info shadow-out mb-4" role="alert">
+              A simple info alert—check it out!
+            </div>
+            <div class="alert text-dark shadow-out mb-4" role="alert">
+              A simple dark alert—check it out!
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+  <!-- Default Alerts End -->
+
+  <!-- Inset Shadow Start -->
+  <section>
+    <div class="container">
+      <p class="fs-7 text-center mb-1">Inset Shadow <a href="#code4" class="ms-2 text-danger code-btn4"><i
+            class="fa fa-code"></i></a></p>
+      <p class="fs-3 text-center mb-5 text-danger">Click on the code button above to see the following component code
+      </p>
+      <div id="code4" class="code-view4 shadow-out mb-5">
+        <div class="highlight">
+          <pre>
+        <code class="language-html">
+          &lt;div&gt;
+            &lt;div class=&quot;alert text-primary shadow-in mb-4&quot; role=&quot;alert&quot;&gt;
+              A simple primary alert—check it out!
+            &lt;/div&gt;
+            &lt;div class=&quot;alert text-success shadow-in mb-4&quot; role=&quot;alert&quot;&gt;
+              A simple success alert—check it out!
+            &lt;/div&gt;
+            &lt;div class=&quot;alert text-danger shadow-in mb-4&quot; role=&quot;alert&quot;&gt;
+              A simple danger alert—check it out!
+            &lt;/div&gt;
+            &lt;div class=&quot;alert text-warning shadow-in mb-4&quot; role=&quot;alert&quot;&gt;
+              A simple warning alert—check it out!
+            &lt;/div&gt;
+            &lt;div class=&quot;alert text-info shadow-in mb-4&quot; role=&quot;alert&quot;&gt;
+              A simple info alert—check it out!
+            &lt;/div&gt;
+            &lt;div class=&quot;alert text-dark shadow-in mb-4&quot; role=&quot;alert&quot;&gt;
+              A simple dark alert—check it out!
+            &lt;/div&gt;
+          &lt;/div&gt;
+        </code>
+      </pre>
+        </div>
+      </div>
+      <div class="row justify-content-center">
+        <div class="col-lg-8">
+          <div>
+            <div class="alert text-primary shadow-in mb-4" role="alert">
+              A simple primary alert—check it out!
+            </div>
+            <div class="alert text-success shadow-in mb-4" role="alert">
+              A simple success alert—check it out!
+            </div>
+            <div class="alert text-danger shadow-in mb-4" role="alert">
+              A simple danger alert—check it out!
+            </div>
+            <div class="alert text-warning shadow-in mb-4" role="alert">
+              A simple warning alert—check it out!
+            </div>
+            <div class="alert text-info shadow-in mb-4" role="alert">
+              A simple info alert—check it out!
+            </div>
+            <div class="alert text-dark shadow-in mb-4" role="alert">
+              A simple dark alert—check it out!
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+  <!-- Inset Shadow End -->
+
+  <!-- Inset Shadow Start -->
+  <section class="spacer">
+    <div class="container">
+      <p class="fs-7 text-center mb-1">Badges <a href="#code4" class="ms-2 text-danger code-btn4"><i
+            class="fa fa-code"></i></a></p>
+      <p class="fs-3 text-center mb-5 text-danger">Click on the code button above to see the following component code
+      </p>
+      <div id="code4" class="code-view4 shadow-out mb-5">
+        <div class="highlight">
+          <pre>
+        <code class="language-html">
+          
+        </code>
+      </pre>
+        </div>
+      </div>
+      <div class="row justify-content-center">
+        <div class="col-lg-8">
+          <div>
+            <p class="text-center fs-4 mb-4">Default Badges</p>
+            <div class="d-flex justify-content-center">
+              <p><span class="badge shadow-in text-dark me-2">Dark Badge</span></p>
+              <p><span class="badge shadow-in text-primary me-2">Primary Badge</span></p>
+              <p><span class="badge shadow-in text-success me-2">Success Badge</span></p>
+              <p><span class="badge shadow-in text-danger me-2">Danger Badge</span></p>
+              <p><span class="badge shadow-in text-warning me-2">Warning Badge</span></p>
+              <p><span class="badge shadow-in text-info me-2">Info Badge</span></p>
+            </div>
+          </div>
+
+          <div>
+            <p class="text-center fs-4 mt-4 mb-4">Rounded Pill Badges</p>
+            <div class="d-flex justify-content-center">
+              <p><span class="badge shadow-in rounded-pill text-dark me-2">Dark Badge</span></p>
+              <p><span class="badge shadow-in rounded-pill text-primary me-2">Primary Badge</span></p>
+              <p><span class="badge shadow-in rounded-pill text-success me-2">Success Badge</span></p>
+              <p><span class="badge shadow-in rounded-pill text-danger me-2">Danger Badge</span></p>
+              <p><span class="badge shadow-in rounded-pill text-warning me-2">Warning Badge</span></p>
+              <p><span class="badge shadow-in rounded-pill text-info me-2">Info Badge</span></p>
+            </div>
+          </div>
+
+          <div class="pb-2">
+            <p class="text-center fs-4 mt-4 mb-4">Link Badges</p>
+            <div class="d-flex justify-content-center">
+              <a href="javascript:void(0)"><span class="badge shadow-in text-dark me-2">Dark Badge</span></a>
+              <a href="javascript:void(0)"><span class="badge shadow-in text-primary me-2">Primary Badge</span></a>
+              <a href="javascript:void(0)"><span class="badge shadow-in text-success me-2">Success Badge</span></a>
+              <a href="javascript:void(0)"><span class="badge shadow-in text-danger me-2">Danger Badge</span></a>
+              <a href="javascript:void(0)"><span class="badge shadow-in text-warning me-2">Warning Badge</span></a>
+              <a href="javascript:void(0)"><span class="badge shadow-in text-info me-2">Info Badge</span></a>
+            </div>
+          </div>
+
+          <div>
+            <p class="text-center fs-4 mt-4 mb-4">Buttons Badges</p>
+            <div class="d-flex justify-content-center">
+              <button type="button" class="btn text-dark shadow-out-hover px-4 py-2">
+                Notifications <span class="badge shadow-in text-danger">5</span>
+              </button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+  <!-- Inset Shadow End -->
   <!-- ============================================================== -->
   <!-- Page Wrapper End -->
   <!-- ============================================================== -->
@@ -195,7 +622,10 @@
   <!-- ============================================================== -->
 
   <!-- Script Start -->
+  <script src="./dist/js/jquery.js"></script>
   <script src="./assets/libs/bootstrap/js/bootstrap.bundle.min.js"></script>
+  <script src="./dist/js/custom.js"></script>
+  <script src="./assets/libs/prism/prism.js"></script>
   <!-- Script End -->
 </body>
 

@@ -4608,19 +4608,19 @@ textarea.form-control-lg {
   box-shadow: inset 0 0 0 rgba(0, 0, 0, 0.125);
 }
 .accordion-button:not(.collapsed)::after {
-  background-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 16 16' fill='%2344476a'%3e%3cpath fill-rule='evenodd' d='M1.646 4.646a.5.5 0 0 1 .708 0L8 10.293l5.646-5.647a.5.5 0 0 1 .708.708l-6 6a.5.5 0 0 1-.708 0l-6-6a.5.5 0 0 1 0-.708z'/%3e%3c/svg%3e");
-  transform: rotate(-180deg);
+  background-image: url("../../dist/images/plus2.svg");
+  transform: rotate(-315deg);
 }
 .accordion-button::after {
   flex-shrink: 0;
-  width: 1.25rem;
-  height: 1.25rem;
+  width: 0.8rem;
+  height: 0.8rem;
   margin-left: auto;
   content: "";
-  background-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 16 16' fill='%2344476a'%3e%3cpath fill-rule='evenodd' d='M1.646 4.646a.5.5 0 0 1 .708 0L8 10.293l5.646-5.647a.5.5 0 0 1 .708.708l-6 6a.5.5 0 0 1-.708 0l-6-6a.5.5 0 0 1 0-.708z'/%3e%3c/svg%3e");
+  background-image: url("../../dist/images/plus2.svg");
   background-repeat: no-repeat;
-  background-size: 1.25rem;
-  transition: transform 0.4s ease-in-out;
+  background-size: 0.8rem;
+  transition: transform 0.5s ease-in-out;
 }
 @media (prefers-reduced-motion: reduce) {
   .accordion-button::after {
@@ -4803,7 +4803,7 @@ textarea.form-control-lg {
 
 .badge {
   display: inline-block;
-  padding: 0.35em 0.65em;
+  padding: 0.65em 1.4em;
   font-size: 0.75em;
   font-weight: 600;
   line-height: 1;
@@ -12118,6 +12118,10 @@ ul {
   align-items: stretch;
 }
 
+.hide {
+  display: none;
+}
+
 .op-7 {
   opacity: 0.7;
 }
@@ -12208,4 +12212,17 @@ ul {
   margin-bottom: 30px;
   border-radius: 6px;
   overflow: hidden;
+}
+
+.code-view1,
+.code-view2,
+.code-view3,
+.code-view4,
+.code-view5,
+.code-view6,
+.code-view7,
+.code-view8,
+.code-view9,
+.code-view10 {
+  display: none;
 }
