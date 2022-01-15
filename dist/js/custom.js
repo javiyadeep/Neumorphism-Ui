@@ -23,4 +23,26 @@ $(document).ready(function () {
     $(".code-view5").toggle(600);
     $(".code-view5").css("display", "block");
   });
+
+  $(".code-btn6").click(function () {
+    $(".code-view6").toggle(600);
+    $(".code-view6").css("display", "block");
+  });
+
+  $(".code-btn7").click(function () {
+    $(".code-view7").toggle(600);
+    $(".code-view7").css("display", "block");
+  });
+  $(".code-btn8").click(function () {
+    $(".code-view8").toggle(600);
+    $(".code-view8").css("display", "block");
+  });
+  $(".code-btn9").click(function () {
+    $(".code-view9").toggle(600);
+    $(".code-view9").css("display", "block");
+  });
+  $(".code-btn10").click(function () {
+    $(".code-view10").toggle(600);
+    $(".code-view10").css("display", "block");
+  });
 });
